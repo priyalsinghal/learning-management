@@ -11,14 +11,7 @@ class FormsController {
         println params.email
         println params.pwd
 
-        redirect(controller:"Forms", action: "thankYou", params: [name: "you"])
+        return[ firstname: params.firstName , lastname:params.lastName,email:params.email, currentDate: new Date(), rating:23, age:100]
     }
-    def thankYou(){
-        println("thank you action executed")
 
-
-        render("thank you for ue sign up.. you submitted the following details...")
-
-
-    }
 }
