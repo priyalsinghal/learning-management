@@ -7,4 +7,7 @@ class HelloController {
 
         return x
     }
+
+    def register() {
+    }
 }
