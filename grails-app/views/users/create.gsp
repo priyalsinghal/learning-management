@@ -8,13 +8,11 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <title> create form</title>
-    <asset:stylesheet href="bootstrap.min.css"/>
-    <asset:stylesheet src="jquery.min.js"/>
-    <asset:stylesheet src="bootstrap.min.js"/>
+    <meta name="layout" content="abc">
+
 </head>
 <body>
-    <g:render template="/templates/mynavbar" model="[mycurrentpage: 'create']"></g:render>
-
+<h1> Registration Form</h1>
 <div class="container-fluid">
 <form class="form-horizontal" action="/learning-management/users/save">
     <div class="form-group col-md-10" >

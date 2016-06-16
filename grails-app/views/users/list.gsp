@@ -8,17 +8,12 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
-    <asset:stylesheet href="bootstrap.min.css"/>
-    <asset:stylesheet src="jquery.min.js"/>
-    <asset:stylesheet src="bootstrap.min.js"/>
+    <meta name="layout" content="abc">
     <title></title>
 
 </head>
 
 <body>
-
-<g:render template="/templates/mynavbar" model="[mycurrentpage: 'Listing']"></g:render>
-
 
     <table class="table table-bordered" >
         <tr>

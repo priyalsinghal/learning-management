@@ -9,14 +9,10 @@
 <html>
 <head>
     <title></title>
-    <asset:stylesheet href="bootstrap.min.css"/>
-    <asset:stylesheet src="jquery.min.js"/>
-    <asset:stylesheet src="bootstrap.min.js"/>
+    <meta name="layout" content="abc">
 </head>
 
 <body>
-<g:render template="/templates/mynavbar" model="[mycurrentpage: 'view']"></g:render>
-
 <dl>
    <dt>Firstname:</dt><dd> ${recentuser.myFirstName}</dd>
     <dt>Lastname:</dt><dd> ${recentuser.myLastName}</dd>
