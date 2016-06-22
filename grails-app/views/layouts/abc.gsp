@@ -7,24 +7,58 @@
     <g:layoutHead/>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
     <div class="navbar-nav">
         <ul class="nav nav-tabs" role="tablist">
             <a class="navbar-brand"> Learning management</a>
-            <li class=${mycurrentpage=="create" ? 'active' : ''}>
-                <g:link controller="users" action="create"> Create</g:link>
+            <li class="navbar-text navbar-right" ${actionName=="create" ? 'active' : ''}>
+                <a href="/users/create" class="navbar-link"> Create</a>
             </li>
-            <li class=${mycurrentpage=="view" ? 'active' : ''}>
-                <g:link controller="users" action="view"> View</g:link>
+            <li class="navbar-text navbar-right" ${actionName=="view" ? 'active' : ''}>
+                <a href="/users/view" class="navbar-link"> view</a>
             </li>
-            <li class=${mycurrentpage=="Listing" ? 'active' : ''}>
-                <g:link controller="users" action="list"> List</g:link>
+            <li class="navbar-text navbar-right" ${actionName=="list" ? 'active' : ''}>
+                <a href="/users/list" class="navbar-link"> List</a>
             </li>
+            <li class="navbar-text navbar-right" ${actionName=="search" ? 'active' : ''}>
+                <a href="/users/search" class="navbar-link"> Search</a>
+            </li>
+
         </ul>
     </div>
 </nav>
+
 <div class="container">
-    <g:layoutBody/>
+    <div class="page-header">
+        <h1> Sign-up Form</h1>
+    </div>
 </div>
+<div class="container-fluid">
+    <div class="col-sm-10">
+      <div id="create">
+        <g:pageProperty name="page.create"/>
+       </div>
+        <div id="view">
+        <g:pageProperty name="page.view"/>
+        </div>
+        <div id="list">
+        <g:pageProperty name="page.list"/>
+        </div>
+        <div id="search">
+            <g:pageProperty name="page.search"/>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <ul>
+            <li>Glyphicons</li>
+            <li>Dropdowns</li>
+            <li>Button Groups</li>
+            <li> Button Dropdowns</li>
+        </ul>
+    </div>
+</div>
+
+<g:layoutBody/>
+
 </body>
 </html>

@@ -13,11 +13,16 @@
 </head>
 
 <body>
+<content tag="view">
 <dl>
-   <dt>Firstname:</dt><dd> ${recentuser.myFirstName}</dd>
-    <dt>Lastname:</dt><dd> ${recentuser.myLastName}</dd>
-    <dt>E-mail: </dt><dd>${recentuser.myemail}</dd>
-    <dt>Age:</dt><dd> ${recentuser.myage}</dd>
+    <dt> Id:</dt><dd>${recent.id} </dd>
+    <dt> version:</dt><dd> ${recent.version}</dd>
+    <dt>Firstname:</dt><dd> ${recent.firstName}</dd>
+    <dt>Lastname:</dt><dd> ${recent.lastName}</dd>
+    <dt>E-mail: </dt><dd>${recent.email}</dd>
+    <dt>Age:</dt><dd> ${recent.age}</dd>
 </dl>
+</content>
 </body>
+
 </html>
